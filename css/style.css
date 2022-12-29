@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "VeggieSeddlings";
+  src: url("../fonts/VeggieSeedlings1.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 184, 148, 1),
+    rgba(34, 112, 147, 1)
+  );
+  font-family: "VeggieSeddlings", Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 0.5rem 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(45, 52, 54, 1);
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 3rem;
+  width: 80vw;
+}
+
+#ham-label,
+#hamburger {
+  display: none;
+}
+
+.links li {
+  letter-spacing: 0.1rem;
+  list-style: none;
+  width: 7rem;
+  text-align: center;
+}
+
+.link {
+  border-bottom: 0.1rem solid transparent;
+  color: rgba(126, 214, 223, 1);
+  padding-bottom: 0.1rem;
+  text-decoration: none;
+  max-width: fit-content;
+  margin: auto;
+}
+
+.link:hover,
+.link.active {
+  border-bottom: 0.1rem solid rgba(247, 241, 227, 1);
+  color: rgba(247, 241, 227, 1);
+  transition: border-bottom 0.4s ease-out, color 0.4s ease-out;
+}
+
+.link.active {
+  border-bottom: 0.1rem solid rgba(223, 249, 251, 1);
+  color: rgba(223, 249, 251, 1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(240, 255, 255, 1);
+  border-radius: 0;
+  padding: 0.5rem;
+  width: 80vw;
+  text-align: left;
+}
+
+h1 {
+  color: rgba(1, 163, 164, 1);
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.section-1 {
+  margin-bottom: 1rem;
+}
+
+.section-1 article {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  min-height: 15rem;
+}
+
+.section-2 article {
+  background-color: rgba(44, 62, 80, 1);
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+  color: rgba(85, 239, 196, 1);
+  padding: 0.5rem;
+  text-align: left;
+  height: 100%;
+  overflow: auto;
+}
+
+article p {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.icon {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.icon:hover {
+  animation: flip 0.8s ease-in-out 0.1s 1;
+}
+
+@keyframes flip {
+  from {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(45, 52, 54, 1);
+  padding: 0.5rem 0;
+  bottom: 0;
+  width: 80vw;
+}
+
+footer div {
+  color: rgba(240, 255, 255, 1);
+  font-size: 1rem;
+}
+
+footer div:first-of-type {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1rem solid #fff;
+    padding: 1rem 0 0.8rem;
+    width: 100%;
+  }
+
+  .link {
+    width: fit-content;
+  }
+
+  #ham-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(45, 52, 54, 1);
+    border-radius: 0.4rem;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+    padding: 0 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .links {
+    display: none;
+  }
+
+  nav input:checked ~ .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  .link {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  .section-2 {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}

@@ -1,2 +1,4 @@
-# Lucky Shrub
-A simple HTML and CSS project with a little JavaScript, used to demo some simple responsive design and CSS layout and animations.
+# Lucky Shrub Landing Page
+![Lucky-Shrub-Site](/Users/tariq/Documents/Coursera/Meta-Front-End-Dev/3-HTML-and-CSS-In-Depth/Graded-Assessment/Lucky-Shrub/images/Lucky-Shrub-Site.png)
+
+An HTML, CSS, JavaScript landing page to demo responsive layout and simple CSS animation.
