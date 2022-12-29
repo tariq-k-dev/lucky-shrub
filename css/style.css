@@ -11,6 +11,11 @@
 
 html,
 body {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 184, 148, 1),
+    rgba(34, 112, 147, 1)
+  );
   min-height: 100vh;
   width: 100vw;
 }
@@ -20,11 +25,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(
-    to bottom right,
-    rgba(0, 184, 148, 1),
-    rgba(34, 112, 147, 1)
-  );
   font-family: "VeggieSeddlings", Verdana, Arial, sans-serif;
   font-size: 10px;
 }
