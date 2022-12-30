@@ -143,17 +143,14 @@ h1 {
   0%,
   32% {
     background-image: url("../images/landscape-1.jpg");
-    animation-delay: 1s;
   }
   33%,
   65% {
     background-image: url("../images/landscape-3.jpg");
-    animation-delay: 1s;
   }
   66%,
   100% {
     background-image: url("../images/landscape-4.jpg");
-    animation-delay: 1s;
   }
 }
 
@@ -183,17 +180,14 @@ h1 {
   0%,
   32% {
     content: "Family business for 20 years";
-    animation-delay: 1s;
   }
   33%,
   65% {
     content: "Quality work that shows";
-    animation-delay: 1s;
   }
   66%,
   100% {
     content: "Give us a call for a free consultation";
-    animation-delay: 1s;
   }
 }
 
