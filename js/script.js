@@ -18,3 +18,11 @@ checkBox.addEventListener("click", () => {
     main.style.cssText = "border-radius: 0.5rem 0.5rem 0 0;";
   }
 });
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768 || checkBox.checked) {
+    main.style.cssText = "border-radius: 0;";
+  } else if (window.innerWidth <= 768 && !checkBox.checked) {
+    main.style.cssText = "border-radius: 0.5rem 0.5rem 0 0;";
+  }
+});
