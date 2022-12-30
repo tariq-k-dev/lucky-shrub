@@ -49,16 +49,22 @@ header {
   align-items: center;
 }
 
+header a {
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgba(247, 241, 227, 1);
+  transition: color 0.4s ease-out;
+}
+
 .logo {
   margin: 0.5rem 0;
 }
 
-.logo a {
-  cursor: pointer;
-}
-
 h1 {
-  color: rgba(255, 255, 255, 1);
   font-size: 2rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
