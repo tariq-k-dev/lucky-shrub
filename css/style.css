@@ -1,5 +1,6 @@
 @font-face {
   font-family: "VeggieSeddlings";
+  size-adjust: 70%;
   src: url("../fonts/VeggieSeedlings1.ttf") format("truetype");
 }
 
@@ -41,6 +42,7 @@ body {
   width: 80vw;
 }
 
+/* Header */
 header {
   display: flex;
   flex-direction: column;
@@ -52,9 +54,14 @@ header {
   margin: 0.5rem 0;
 }
 
+.logo a {
+  cursor: pointer;
+}
+
+/* Nav */
 .links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: rgba(45, 52, 54, 1);
   border-radius: 0.5rem 0.5rem 0 0;
@@ -70,17 +77,21 @@ header {
 .links li {
   letter-spacing: 0.1rem;
   list-style: none;
-  width: 7rem;
+  margin-right: 1.5rem;
   text-align: center;
+}
+
+.links li:last-of-type {
+  margin-right: 0;
 }
 
 .link {
   border-bottom: 0.1rem solid transparent;
   color: rgba(126, 214, 223, 1);
+  font-size: 1.1rem;
   padding-bottom: 0.1rem;
   text-decoration: none;
-  max-width: fit-content;
-  margin: auto;
+  max-width: 100%;
 }
 
 .link:hover,
@@ -95,6 +106,7 @@ header {
   color: rgba(223, 249, 251, 1);
 }
 
+/* Main Content */
 main {
   display: flex;
   flex-direction: column;
@@ -108,23 +120,96 @@ main {
 
 h1 {
   color: rgba(1, 163, 164, 1);
-  font-size: 1.6rem;
-  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
   margin: 0.5rem 0;
+  text-align: center;
 }
 
-.section-1 {
-  margin-bottom: 1rem;
+/* Banner Section */
+.banner {
+  background-image: url("../images/landscape-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0.5rem;
+  height: 430px;
+  margin: 0.5rem;
+  animation: banner 20s ease-in-out 1s infinite;
 }
 
-.section-1 article {
-  font-size: 0.8rem;
+/* Banner Background Image Animation */
+@keyframes banner {
+  0%,
+  32% {
+    background-image: url("../images/landscape-1.jpg");
+    animation-delay: 1s;
+  }
+  33%,
+  65% {
+    background-image: url("../images/landscape-3.jpg");
+    animation-delay: 1s;
+  }
+  66%,
+  100% {
+    background-image: url("../images/landscape-4.jpg");
+    animation-delay: 1s;
+  }
+}
+
+/* Banner Text Animation */
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.6rem;
+  height: 100%;
+  letter-spacing: 0.2rem;
   line-height: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
 }
 
+.text::before {
+  background-color: rgba(44, 62, 80, 0.8);
+  border-radius: 0.5rem;
+  content: "Family business for 20 years";
+  padding: 0.5rem;
+  animation: text 20s ease-in-out 1s infinite;
+}
+
+@keyframes text {
+  0%,
+  32% {
+    content: "Family business for 20 years";
+    animation-delay: 1s;
+  }
+  33%,
+  65% {
+    content: "Quality work that shows";
+    animation-delay: 1s;
+  }
+  66%,
+  100% {
+    content: "Give us a call for a free consultation";
+    animation-delay: 1s;
+  }
+}
+
+/* Second Section Articles */
 .section-2 {
   display: flex;
   width: 100%;
+}
+
+h3 {
+  color: rgba(247, 241, 227, 1);
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
 }
 
 .section-2 article {
@@ -139,10 +224,11 @@ h1 {
 }
 
 article p {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   line-height: 1.3rem;
 }
 
+/* Article Image Hover Animation */
 .icon {
   border-radius: 50%;
   cursor: pointer;
@@ -165,6 +251,7 @@ article p {
   }
 }
 
+/* Footer Styles */
 footer {
   display: flex;
   justify-content: center;
@@ -184,6 +271,24 @@ footer div:first-of-type {
   margin-right: 2rem;
 }
 
+footer div:nth-child(2) {
+  margin-top: 0.5rem;
+}
+
+.copy {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 0.2rem;
+}
+
+.phone {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Small Screen Media Queries */
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
@@ -196,7 +301,8 @@ footer div:first-of-type {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 0.1rem solid #fff;
+    border-bottom: 0.1rem solid rgba(247, 241, 227, 1);
+    margin-right: 0;
     padding: 1rem 0 0.8rem;
     width: 100%;
   }
@@ -208,17 +314,26 @@ footer div:first-of-type {
   #ham-label {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: rgba(45, 52, 54, 1);
     border-radius: 0.4rem;
     color: rgba(255, 255, 255, 1);
-    font-style: normal;
-    font-size: 2rem;
     height: 3rem;
     width: 3rem;
     padding: 0 0.1rem;
     margin-bottom: 0.5rem;
+  }
+
+  .ham-icon {
+    display: inline-block;
+    font-size: 3rem;
+    margin-top: -0.3rem;
+  }
+
+  .x-icon {
+    display: inline-block;
+    font-size: 2rem;
   }
 
   .links {
@@ -237,7 +352,6 @@ footer div:first-of-type {
   .link {
     display: block;
     padding: 0;
-    width: 100%;
   }
 
   .links,
@@ -248,6 +362,11 @@ footer div:first-of-type {
 
   main {
     border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
   }
 
   .section-2 {

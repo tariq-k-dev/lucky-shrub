@@ -22,12 +22,15 @@
   <body>
     <header>
       <span class="logo">
-        <img src="./images/lucky-shrub-1.png" alt="Lucky Shrub logo"
-          height="120" width="auto">
+        <a href="https://tariq-k-dev.github.io/lucky-shrub/">
+          <img src="./images/lucky-shrub-1.png" alt="Lucky Shrub logo"
+            height="120" width="auto">
+        </a>
       </span>
       <nav>
         <!-- Hamburger menu for small screens -->
-        <label id="ham-label" for="hamburger">&#9776;</label>
+        <label id="ham-label" for="hamburger"><span
+            class="ham-icon">&#9776;</span></label>
         <input type="checkbox" id="hamburger" />
         <ul class="links">
           <li><a class="link active" href="#">HOME</a></li>
@@ -39,32 +42,12 @@
     </header>
     <main>
       <h1>Lucky Shrub</h1>
-      <section class="section-1">
-        <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eius
-          corrupti nam consequuntur optio sed id magni. Modi minus velit
-          pariatur numquam laudantium perferendis laboriosam facilis
-          repellendus doloribus, delectus eaque!
-          Veritatis possimus temporibus non ducimus tenetur corporis
-          consequuntur inventore deserunt aliquam fugiat facere unde ipsum
-          dolorum quisquam aliquid, incidunt minus rerum quas, eligendi dolore
-          error excepturi! Eveniet harum facilis eaque.
-          Asperiores qui tempora possimus vel impedit illum in unde facere
-          expedita. Reiciendis tempora rerum dolore dolor suscipit! Neque
-          facilis, dolores perferendis itaque eius assumenda animi fugit
-          inventore, iure placeat aperiam?
-          Ab rerum modi nostrum, voluptate recusandae, iusto provident,
-          impedit similique officia sequi laboriosam? Voluptas id laborum
-          nesciunt magnam culpa quas natus porro expedita labore, mollitia
-          doloribus, minus ipsam iste! Soluta.
-          Nemo sunt rerum ipsam commodi sit vitae quasi facilis asperiores
-          magnam nihil odit deleniti, esse temporibus aut quidem dolores iste,
-          a blanditiis velit omnis repellat dolorem fugiat optio tenetur.
-          Ipsam?
-        </article>
+      <section class="banner">
+        <h2 class="text"></h2>
       </section>
       <section class="section-2">
         <article>
+          <h3>Drought Resistant Plants</h3>
           <img class="icon" src="./images/plant-1.png" alt="Lucky Shrub logo"
             height="100" width="100">
           <p>
@@ -75,6 +58,7 @@
           </p>
         </article>
         <article>
+          <h3>Automatic Drip Irrigation</h3>
           <img class="icon" src="./images/plant-2.png" alt="Lucky Shrub logo"
             height="100" width="100">
           <p>
@@ -85,6 +69,7 @@
           </p>
         </article>
         <article>
+          <h3>Maintenance Services</h3>
           <img class="icon" src="./images/plant-3.png" alt="Lucky Shrub logo"
             height="100" width="100">
           <p>
@@ -102,8 +87,8 @@
           width="auto">
       </div>
       <div>
-        Lucky Shrub <span class="copy">&copy;</span>&nbsp;<span
-          class="year"></span>
+        Lucky Shrub <span class="copy">&copy;</span><span class="year"></span>
+        <span class="phone">(555)555-5555</span>
       </div>
     </footer>
     <script src="./js/script.js"></script>

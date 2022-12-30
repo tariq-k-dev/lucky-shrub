@@ -9,12 +9,10 @@ yearElem.innerText = currentYear.getFullYear();
 // Change hamburger menu bars to 'X'
 checkBox.addEventListener("click", () => {
   if (checkBox.checked) {
-    hamLabel.innerHTML = "X";
-    hamLabel.style.justifyContent = "center";
+    hamLabel.innerHTML = "<span class='x-icon'>X</span>";
     main.style.cssText = "border-radius: 0;";
   } else {
-    hamLabel.innerHTML = "&#9776;";
-    hamLabel.style.justifyContent = "flex-start";
+    hamLabel.innerHTML = "<span class='ham-icon'>&#9776;</span>";
     main.style.cssText = "border-radius: 0.5rem 0.5rem 0 0;";
   }
 });
