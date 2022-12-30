@@ -124,21 +124,18 @@ h1 {
 
 .section-2 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  min-height: 15rem;
+  width: 100%;
 }
 
 .section-2 article {
   background-color: rgba(44, 62, 80, 1);
   border-radius: 0.5rem;
-  color: rgba(255, 255, 255, 1);
   color: rgba(85, 239, 196, 1);
+  flex: 1;
+  margin: 0.5rem;
   padding: 0.5rem;
-  text-align: left;
-  height: 100%;
   overflow: auto;
+  text-align: left;
 }
 
 article p {
@@ -188,10 +185,6 @@ footer div:first-of-type {
 }
 
 @media screen and (max-width: 768px) {
-  main {
-    border-radius: 0.5rem 0.5rem 0 0;
-  }
-
   nav {
     display: flex;
     flex-direction: column;
@@ -247,8 +240,11 @@ footer div:first-of-type {
     width: 100%;
   }
 
+  main {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
   .section-2 {
-    flex-wrap: wrap;
-    height: auto;
+    display: block;
   }
 }
