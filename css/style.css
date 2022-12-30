@@ -45,7 +45,6 @@ body {
 /* Header */
 header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -56,6 +55,15 @@ header {
 
 .logo a {
   cursor: pointer;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  margin: 0 0 0 1.5rem;
+  text-align: center;
 }
 
 /* Nav */
@@ -94,8 +102,7 @@ header {
   max-width: 100%;
 }
 
-.link:hover,
-.link.active {
+.link:hover {
   border-bottom: 0.1rem solid rgba(247, 241, 227, 1);
   color: rgba(247, 241, 227, 1);
   transition: border-bottom 0.4s ease-out, color 0.4s ease-out;
@@ -116,15 +123,6 @@ main {
   padding: 0.5rem;
   width: 80vw;
   text-align: left;
-}
-
-h1 {
-  color: rgba(1, 163, 164, 1);
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  line-height: 2rem;
-  margin: 0.5rem 0;
-  text-align: center;
 }
 
 /* Banner Section */
@@ -285,6 +283,13 @@ footer div:nth-child(2) {
 
 /* Small Screen Media Queries */
 @media screen and (max-width: 768px) {
+  header {
+    width: 80vw;
+  }
+  h1 {
+    margin: 0;
+  }
+
   nav {
     display: flex;
     flex-direction: column;
