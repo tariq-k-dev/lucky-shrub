@@ -15,20 +15,16 @@
     <meta name="rating" content="safe for kids">
     <meta name="copyright" content="Copyright 2022">
     <title>Lucky Shrub - Landing Page Demo</title>
-    <link rel="shortcut icon"
-      href="https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/favicon.ico"
-      type="image/x-icon">
-    <link rel="stylesheet"
-      href="https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/css/style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body>
     <header>
       <span class="logo">
         <a href="https://tariq-k-dev.github.io/lucky-shrub/">
-          <img
-            src="https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/lucky-shrub-1.png"
-            alt="Lucky Shrub logo" height="100" width="auto">
+          <img src="./images/lucky-shrub-1.png" alt="Lucky Shrub logo"
+            height="100" width="auto">
         </a>
       </span>
       <h1>
@@ -59,8 +55,7 @@
       <section class="section-2">
         <article>
           <h3>Drought<br>Resistant<br>Plants</h3>
-          <img class="icon"
-            src="https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/plant-1.png"
+          <img class="icon" src="./images/plant-1.png"
             alt="Potted succulent in orange pot phhoto" height="100"
             width="100">
           <p>
@@ -72,8 +67,7 @@
         </article>
         <article>
           <h3>Automatic<br>Drip<br>Irrigation</h3>
-          <img class="icon"
-            src="https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/plant-2.png"
+          <img class="icon" src="./images/plant-2.png"
             alt="Potted shrub in yellow pot photo" height="100" width="100">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magni
@@ -86,8 +80,7 @@
           <h3>Maintenance<br>Services<br><span
               class="transparent">Transparent</span>
           </h3>
-          <img class="icon"
-            src="https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/plant-3.png"
+          <img class="icon" src="./images/plant-3.png"
             alt="Dark pink flower photo" height="100" width="100">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
@@ -100,43 +93,15 @@
     </main>
     <footer>
       <div>
-        <img
-          src="https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/lucky-shrub-2.png"
-          alt="Small Lucky Shrub logo" height="70" width="auto">
+        <img src="./images/lucky-shrub-2.png" alt="Small Lucky Shrub logo"
+          height="70" width="auto">
       </div>
       <div>
         Lucky Shrub <span class="copy">&copy;</span><span class="year"></span>
         <span class="phone">(555)555-5555</span>
       </div>
     </footer>
-    <script defer>
-      const currentYear = new Date();
-      const yearElem = document.querySelector(".year");
-      const hamLabel = document.getElementById("ham-label");
-      const checkBox = document.getElementById("hamburger");
-      const main = document.querySelector("main");
-
-      yearElem.innerText = currentYear.getFullYear();
-
-      // Change hamburger menu bars to 'X'
-      checkBox.addEventListener("click", () => {
-        if (checkBox.checked) {
-          hamLabel.innerHTML = "<span class='x-icon'>X</span>";
-          main.style.cssText = "border-radius: 0;";
-        } else {
-          hamLabel.innerHTML = "<span class='ham-icon'>&#9776;</span>";
-          main.style.cssText = "border-radius: 0.5rem 0.5rem 0 0;";
-        }
-      });
-
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 768 || checkBox.checked) {
-          main.style.cssText = "border-radius: 0;";
-        } else if (window.innerWidth <= 768 && !checkBox.checked) {
-          main.style.cssText = "border-radius: 0.5rem 0.5rem 0 0;";
-        }
-      });
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 
 </html>
