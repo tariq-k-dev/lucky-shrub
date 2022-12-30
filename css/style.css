@@ -248,4 +248,8 @@ footer div:first-of-type {
   .section-2 {
     display: block;
   }
+
+  footer {
+    width: 94vw;
+  }
 }
