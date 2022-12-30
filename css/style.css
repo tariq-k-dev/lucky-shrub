@@ -135,7 +135,7 @@ h1 {
   border-radius: 0.5rem;
   height: 430px;
   margin: 0.5rem;
-  animation: banner 20s ease-in-out 1s infinite;
+  animation: banner 20s ease-in-out 0s infinite;
 }
 
 /* Banner Background Image Animation */
@@ -173,7 +173,7 @@ h1 {
   border-radius: 0.5rem;
   content: "Family business for 20 years";
   padding: 0.5rem;
-  animation: text 20s ease-in-out 1s infinite;
+  animation: text 20s ease-in-out 0s infinite;
 }
 
 @keyframes text {
