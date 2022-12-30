@@ -138,10 +138,11 @@ main {
   background-image: url("../images/landscape-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 85%;
+  background-position: center 60%;
   border-radius: 0.5rem;
-  height: 45vh;
+  height: 55vh;
   margin: 0.5rem;
+  padding: 0 1rem;
   animation: banner 20s ease-in-out 0s infinite;
 }
 
@@ -344,7 +345,7 @@ footer div:nth-child(2) {
 
   .ham-icon {
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: -0.3rem;
   }
 
