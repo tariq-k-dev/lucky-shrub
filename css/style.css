@@ -1,8 +1,7 @@
 @font-face {
   font-family: "VeggieSeddlings";
   size-adjust: 70%;
-  src: url("https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/fonts/VeggieSeedlings1.ttf")
-    format("truetype");
+  src: url("../fonts/VeggieSeedlings1.ttf") format("truetype");
 }
 
 * {
@@ -136,7 +135,7 @@ main {
 /* Banner Section */
 .banner {
   background-color: rgba(45, 52, 54, 1);
-  background-image: url("https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/landscape-1.jpg");
+  background-image: url("../images/landscape-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 60%;
@@ -151,15 +150,15 @@ main {
 @keyframes banner {
   0%,
   32% {
-    background-image: url("https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/landscape-1.jpg");
+    background-image: url("../images/landscape-1.jpg");
   }
   33%,
   65% {
-    background-image: url("https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/landscape-3.jpg");
+    background-image: url("../images/landscape-3.jpg");
   }
   66%,
   100% {
-    background-image: url("https://raw.githubusercontent.com/tariq-k-dev/lucky-shrub/main/images/landscape-4.jpg");
+    background-image: url("../images/landscape-4.jpg");
   }
 }
 
@@ -338,7 +337,6 @@ footer div:nth-child(2) {
     background-color: rgba(45, 52, 54, 1);
     border-radius: 0.4rem;
     color: rgba(255, 255, 255, 1);
-    cursor: pointer;
     height: 3rem;
     width: 3rem;
     padding: 0 0.1rem;
@@ -348,6 +346,7 @@ footer div:nth-child(2) {
   .ham-icon {
     display: inline-block;
     font-size: 2.5rem;
+    margin-top: -0.3rem;
   }
 
   .x-icon {
